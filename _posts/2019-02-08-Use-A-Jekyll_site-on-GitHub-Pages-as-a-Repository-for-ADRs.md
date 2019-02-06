@@ -13,7 +13,7 @@ status: accepted
 
 ## Decision
 
-We will record ADRs as 'posts' in a Jekyll site deployed using GitHub Enterprise pages.
+We will record ADRs as 'posts' in a Jekyll site deployed using GitHub Pages.
 
 
 ## Consequences
