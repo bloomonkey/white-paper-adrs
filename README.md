@@ -1,40 +1,18 @@
-# White Paper
+# ADRs
 
-**White Paper** is a theme for Jekyll. It is built keeping content in focus and is best for writers/developers who also like to share code with their essays.
+**ADRs** is a theme for Jekyll.
+It is intended for keeping records of decisions you made about software architecture.
+It is based on the beautiful and simple [White Paper](http://vinitkumar.me/white-paper/).
 
-## Note: Dark Paper out now
+## How to use ADRs
 
-> Inspired by MacOS dark mode, a new dark theme is out now. Check out [Dark Paper github](https://github.com/vinitkumar/dark-paper) and it's live demo here: [dark paper website](https://vinitkumar.me/dark-paper)
-
-# White Paper in Action
-
-### Home page
-
-![home](https://cldup.com/nAr0lOBTTJ.png)
-
-### Post Detail View
-
-![post detail](https://cldup.com/kP54KLISpn-3000x3000.png)
-
-## How to use White Paper
-
-Fork the repo to your account by clicking the button on the top right as shown in the image:
-
-![fork](https://cldup.com/vOF0oaUkh5-3000x3000.png) and then where you want to fork it as shown below.
-
-Next, Go the the project settings and change the repository name to `<username>.github.io` where username is your username.
+Fork the repo to your account.
 
 Change these entries in the `_config.yml` file:
 
-Also, change this line in head.html [link](https://github.com/vinitkumar/white-paper/blob/9ad021a8f94c6240351bd57eda301b5f207e554e/_includes/head.html#L28)
-
-```html
-<!-- From this -->
-<link rel="stylesheet" href=" {{ '/css/main.min.css' | relative_url }}" type="text/css" />
-<!-- To this -->
-<link rel="stylesheet" href=" {{ '/css/main.min.css' | absolute_url }}" type="text/css" />
-
-```
+- [ ] `url`
+- [ ] `owner.name`
+- [ ] `owner.github`
 
 
 This will make sure that the path of CSS is correct and the theme loads correctly.
@@ -44,7 +22,6 @@ master_repo: false
 url: "<username>.github.io"
 rtl: false  # change to true if posts is in Arabic/other Right to left language.
 ```
-Also, change all other fields in the `_config.yml` file to your choice.
 
 ## Installation
 
@@ -101,14 +78,4 @@ concat: {
 ```
 
 ## License
-* see [LICENSE](https://github.com/vinitkumar/white-paper/blob/gh-pages/LICENSE) file
-
-## Version
-* Version 4.0.0
-
-## Contact
-#### Developer
-
-* Homepage: http://vinitkumar.me
-* e-mail: vinit1414.08@bitmesra.ac.in
-* Twitter: [@vinitkme](https://twitter.com/vinitkme "vinitkme on twitter")
+* see [LICENSE](LICENSE) file
