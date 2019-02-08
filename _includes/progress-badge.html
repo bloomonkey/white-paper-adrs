@@ -1,0 +1,16 @@
+{% if include.status %}
+{% if include.status contains 'accepted' %}
+{% assign badge_colour = 'brightgreen' %}
+{% endif %}
+{% if include.status == 'proposed' %}
+{% assign badge_colour = 'yellow' %}
+{% endif %}
+{% if include.status contains 'superseded' %}
+{% assign badge_colour = 'blue' %}
+{% endif %}
+{% if include.status == 'deprecated' %}
+{% assign badge_colour = 'red' %}
+{% endif %}
+
+<img src="https://img.shields.io/badge/status-{{include.status}}-{{badge_colour}}.svg" alt="{{include.status || capitalize}}"/>
+{% endif %}
